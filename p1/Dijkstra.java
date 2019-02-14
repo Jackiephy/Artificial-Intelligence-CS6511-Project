@@ -197,21 +197,21 @@ public class Dijkstra {
     }
     
     public static void main(String[] args) throws Exception {
-        Dijkstra graph = new Dijkstra(Dijkstra.UNDIRECTED_GRAPH, Dijkstra.ADJACENCY_MATRIX, 200);
+        Dijkstra graph = new Dijkstra(Dijkstra.UNDIRECTED_GRAPH, Dijkstra.ADJACENCY_MATRIX, 100);
         int[] vnum = new int[3];
         
-        for(int i = 0; i < 200; i++) {
+        for(int i = 0; i < 100; i++) {
         	String s = String.valueOf(i);
         	graph.addVertex(s);
         }
         
-        File file = new File("D://document/Projects/JAVA/workplace/Arora_AI/src/p1/test.txt");
+        File file = new File("D://document/Projects/JAVA/workplace/Arora_AI/src/p1/data.txt");
 		FileReader fileReader = new FileReader(file);
 		LineNumberReader reader = new LineNumberReader(fileReader);
-		int number = 201;
+		int number = 101;
 		String txt = "";
 		int lines = 0;
-		while ((txt != null)&&(number != 2189)) {
+		while ((txt != null)&&(number != 2062)) {
 			lines++;
 			if (lines == number) {
 				number++;
